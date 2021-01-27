@@ -1,0 +1,51 @@
+.intro {
+  color: $white;
+  max-width: 393px;
+}
+
+.intro__slogan {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.intro__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .intro__slogan {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 88px;
+    margin-bottom: 20px;
+  }
+
+  .intro__description {
+    font-size: 18px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .intro__slogan {
+    margin-top: 70px;
+  }
+
+  .intro__description {
+    margin-bottom: 140px;
+  }
+}

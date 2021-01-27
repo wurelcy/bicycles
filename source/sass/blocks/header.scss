@@ -1,0 +1,75 @@
+.page-header {
+  background-image: url('../img/bg-bike@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header__toggle {
+  display: none;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 240px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background-image: url('../img/bg-bike-tablet@1x.jpg');
+    background-position: top;
+    background-size: 100% 340px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 25px;
+    left: 21px;
+  }
+
+  .page-header__toggle {
+    margin: 0;
+    margin-left: auto;
+    display: block;
+    border: 0;
+    background-color: $cyan;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/icon-menu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .page-header--nojs {
+    min-width: 100%;
+
+    .page-header__toggle {
+      display: none;
+    }
+  }
+
+  .page-header--opened {
+    .page-header__toggle {
+      position: relative;
+      background-color: transparent;
+      background-image: url('../img/icon-cross.svg');
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header {
+    background-image: url('../img/bg-bike-mobile@1x.jpg');
+    background-size: 100% 390px;
+  }
+}
