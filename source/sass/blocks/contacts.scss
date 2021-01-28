@@ -45,12 +45,12 @@ iframe {
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 26px;
     height: 24px;
     top: 0;
     left: -35px;
-    background-image: url('../img/icon-phone.svg');
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
   }
 }
@@ -61,7 +61,7 @@ iframe {
   &::before {
     top: 2px;
     left: -45px;
-    background-image: url('../img/icon-mail.svg');
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -101,6 +101,7 @@ iframe {
     max-width: 100%;
     max-height: 250px;
   }
+
   .contacts__address {
     margin-bottom: 25px;
     max-width: 270px;

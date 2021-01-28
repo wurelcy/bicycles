@@ -38,10 +38,10 @@
         <div class="container">
           <div class="page-header__block">
             <div class="page-header__panel">
-            <img src="img/logo.svg" alt="Логотип компании" width="67" height="20" class="page-header__logo">
-            <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+              <img src="img/logo.svg" alt="Логотип компании" width="67" height="20" class="page-header__logo">
+              <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
             </div>
             <section class="intro">
               <h2 class="visually-hidden">О нас</h2>
@@ -125,9 +125,15 @@
         </div>
       </section>
       <section class="video" id="video">
-        <h2>Видео про велосипеды</h2>
-        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <img src="img/video-preview-desktop@1x.jpg" alt="Превью видео">
+        <div class="container">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <picture class="video__preview">
+            <source srcset="img/video-preview-desktop@1x.jpg" media="(min-width: 1024px)">
+            <source srcset="img/video-preview-tablet@1x.jpg" media="(min-width: 768px)">
+            <img src="img/video-preview-mobile@1x.jpg" alt="Превью видео">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

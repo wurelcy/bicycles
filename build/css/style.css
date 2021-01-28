@@ -311,7 +311,7 @@ img {
 
 a {
   text-decoration: none;
-  color: currentcolor; }
+  color: currentColor; }
 
 .visually-hidden {
   position: absolute;
@@ -345,28 +345,28 @@ a {
     max-width: 300px; } }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
   src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff"); }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
   src: url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff"); }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
   src: url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff"); }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -379,7 +379,7 @@ a {
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  font-family: 'OpenSans', 'Arial', sans-serif; }
+  font-family: "OpenSans", "Arial", sans-serif; }
 
 .page-header {
   background-color: #131314;
@@ -488,7 +488,7 @@ iframe {
   .contacts__email::before,
   .contacts__phone::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 26px;
     height: 24px;
     top: 0;
@@ -678,7 +678,7 @@ iframe {
     position: relative; }
     .main-nav__item::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 22px;
       height: 17px;
       top: 23px;
@@ -768,6 +768,70 @@ iframe {
     .facts__item:nth-child(odd) {
       margin-right: 0; } }
 
+.video {
+  padding-top: 120px;
+  background: linear-gradient(#131314 85%, #ffffff 85%);
+  color: #ffffff;
+  text-align: center; }
+  .video p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    padding: 0; }
+  .video img {
+    display: block;
+    margin: 0 auto; }
+
+.video__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px; }
+
+.video__preview {
+  position: relative; }
+  .video__preview::after {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/icon-play.svg");
+    background-size: contain;
+    top: 229px;
+    left: -30px; }
+
+@media (max-width: 1023px) {
+  .video {
+    padding-top: 70px;
+    background: linear-gradient(#131314 85%, #ffffff 85%); }
+    .video p {
+      max-width: 429px;
+      margin-bottom: 40px; }
+  .video__title {
+    font-size: 24px; }
+  .video__preview::after {
+    width: 90px;
+    height: 90px;
+    top: 110px;
+    left: -45px; } }
+
+@media (max-width: 767px) {
+  .video {
+    padding-top: 84px;
+    background: linear-gradient(#131314 85%, #ffffff 85%); }
+    .video p {
+      margin-bottom: 50px; }
+  .video__preview::after {
+    width: 65px;
+    height: 65px;
+    top: 50px;
+    left: -30px; } }
+
 .types {
   background-color: #f6f7f9;
   padding-top: 149px;
@@ -796,7 +860,7 @@ iframe {
     margin-top: 39px; }
     .types__item:nth-child(2)::before, .types__item:nth-child(2)::after {
       position: absolute;
-      content: '';
+      content: "";
       height: 47px;
       width: 47px;
       background-image: url("../img/icon-rectangle.svg");
@@ -811,7 +875,7 @@ iframe {
     z-index: 1; }
     .types__item:first-child::before {
       position: absolute;
-      content: '';
+      content: "";
       height: 180px;
       width: 180px;
       background-image: url("../img/icon-ellipse.svg");
@@ -821,7 +885,7 @@ iframe {
       z-index: -1; }
   .types__item:last-child::before {
     position: absolute;
-    content: '';
+    content: "";
     height: 95px;
     width: 95px;
     background-image: url("../img/icon-ellipse-small.svg");

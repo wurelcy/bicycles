@@ -43,12 +43,12 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 22px;
       height: 17px;
       top: 23px;
       right: 25px;
-      background-image: url('../img/icon-arrow.svg');
+      background-image: url("../img/icon-arrow.svg");
       background-position: center;
       background-repeat: no-repeat;
     }

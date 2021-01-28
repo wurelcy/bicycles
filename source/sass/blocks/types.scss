@@ -34,10 +34,10 @@
     &::before,
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       height: 47px;
       width: 47px;
-      background-image: url('../img/icon-rectangle.svg');
+      background-image: url("../img/icon-rectangle.svg");
       top: -18px;
       left: -19px;
     }
@@ -55,10 +55,10 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       height: 180px;
       width: 180px;
-      background-image: url('../img/icon-ellipse.svg');
+      background-image: url("../img/icon-ellipse.svg");
       background-size: contain;
       top: 156px;
       left: -65px;
@@ -69,10 +69,10 @@
   &:last-child {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       height: 95px;
       width: 95px;
-      background-image: url('../img/icon-ellipse-small.svg');
+      background-image: url("../img/icon-ellipse-small.svg");
       background-size: contain;
       top: -32px;
       right: -36px;
