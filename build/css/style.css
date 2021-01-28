@@ -436,9 +436,94 @@ a {
     background-image: url("../img/bg-bike-mobile@1x.jpg");
     background-size: 100% 390px; } }
 
-@media (max-width: 767px) {
+.contacts {
+  margin-top: 151px; }
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center; }
+
+.contacts__address {
+  margin: 0 auto;
+  margin-bottom: 41px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  max-width: 555px; }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 39px; }
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 98px; }
+
+.contacts__email,
+.contacts__phone {
+  display: block;
+  position: relative; }
+  .contacts__email::before,
+  .contacts__phone::before {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 24px;
+    top: 0;
+    left: -35px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat; }
+
+.contacts__email {
+  margin-right: 127px; }
+  .contacts__email::before {
+    top: 2px;
+    left: -45px;
+    background-image: url("../img/icon-mail.svg"); }
+
+@media (max-width: 1023px) {
+  .contacts {
+    margin-top: 70px; }
+  .contacts__title {
+    margin-bottom: 20px;
+    font-size: 24px; }
+  .contacts__address {
+    margin-bottom: 20px;
+    max-width: 100%; }
   iframe {
-    width: 100%; } }
+    max-width: 698px;
+    margin-bottom: 21px; }
+  .contacts__wrapper {
+    margin-bottom: 54px; } }
+
+@media (max-width: 767px) {
+  .contacts .container {
+    min-width: 100%; }
+  iframe {
+    max-width: 100%;
+    max-height: 250px; }
+  .contacts__address {
+    margin-bottom: 25px;
+    max-width: 270px; }
+  .contacts__wrapper {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 35px; }
+  .contacts__email {
+    margin-right: 0;
+    margin-bottom: 22px; } }
 
 .form {
   max-width: 327px; }
