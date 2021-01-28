@@ -8,11 +8,8 @@
   </head>
   <body class="page-body">
     <header class="page-header page-header--closed">
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="container">
-        <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed">
+        <div class="container">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="#about" aria-label="Посмотреть информацию о нас">
@@ -35,24 +32,33 @@
               </a>
             </li>
           </ul>
-        </nav>
-        <img src="img/logo.svg" alt="Логотип компании" width="67" height="20" class="page-header__logo">
-        <div class="page-header__wrapper">
-          <section class="intro">
-            <h2 class="visually-hidden">О нас</h2>
-            <p class="intro__slogan">Мы продаем велосипеды</p>
-            <p class="intro__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-          </section>
+        </div>
+      </nav>
+      <div class="page-header__wrapper">
+        <div class="container">
+          <div class="page-header__block">
+            <div class="page-header__panel">
+            <img src="img/logo.svg" alt="Логотип компании" width="67" height="20" class="page-header__logo">
+            <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            </div>
+            <section class="intro">
+              <h2 class="visually-hidden">О нас</h2>
+              <p class="intro__slogan">Мы продаем велосипеды</p>
+              <p class="intro__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            </section>
+          </div>
           <form class="form" action="index.html" method="post">
             <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-              <p class="form__name">
-                <label for="your-name" class="visually-hidden">Имя</label>
-                <input class="form__name-field" id="your-name" type="text" name="name" placeholder="Введите Ваше Имя">
-              </p>
-              <p class="form__number">
-                <label for="your-number" class="visually-hidden">Номер телефона</label>
-                <input class="form__number-field" id="your-number" type="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
-              </p>
+            <p class="form__name">
+              <label for="your-name" class="visually-hidden">Имя</label>
+              <input class="form__name-field" id="your-name" type="text" name="name" placeholder="Введите Ваше Имя">
+            </p>
+            <p class="form__number">
+              <label for="your-number" class="visually-hidden">Номер телефона</label>
+              <input class="form__number-field" id="your-number" type="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
+            </p>
             <button type="submit" class="form__submit" aria-label="Отправить заявку">Подобрать велосипед мечты</button>
           </form>
         </div>
@@ -85,21 +91,38 @@
         </div>
       </section>
       <section class="types" id="types">
-        <h2>Виды велосипедов</h2>
-        <ul class="types__list">
-          <li class="types__item">
-            <img src="img/road-bike-desktop@1x.jpg" alt="Дорожный велосипед">
-            <p>Дорожный велосипед</p>
-          </li>
-          <li class="types__item">
-            <img src="img/mount-bike-desktop@1x.jpg" alt="Горный велосипед">
-            <p>Горный велосипед</p>
-          </li>
-          <li class="types__item">
-            <img src="img/child-bike-desktop@1x.jpg" alt="Детский велосипед">
-            <p>Детский велосипед</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="types__title">Виды велосипедов</h2>
+          <ul class="types__list">
+            <li class="types__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/road-bike-mobile@1x.webp 1x, img/road-bike-mobile@2x.webp 2x">
+                <source srcset="img/road-bike-desktop@1x.jpg 1x, img/road-bike-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+                <img src="img/road-bike-mobile@1x.jpg 1x, img/road-bike-mobile@2x.jpg 2x" alt="Дорожный велосипед">
+              </picture>
+              <p>Дорожный велосипед</p>
+            </li>
+            <li class="types__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/mount-bike-desktop@1x.webp 1x, img/mount-bike-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/mount-bike-mobile@1x.webp 1x, img/mount-bike-mobile@2x.webp 2x">
+                <source srcset="img/mount-bike-desktop@1x.jpg" media="(min-width: 1024px)">
+                <img src="img/mount-bike-mobile@1x.jpg 1x, img/mount-bike-mobile@2x.jpg 2x" alt="Горный велосипед">
+              </picture>
+              <p>Горный велосипед</p>
+            </li>
+            <li class="types__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/child-bike-desktop@1x.webp 1x, img/child-bike-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/child-bike-mobile@1x.webp 1x, img/child-bike-mobile@2x.webp 2x">
+                <source srcset="img/child-bike-desktop@1x.jpg" media="(min-width: 1024px)">
+                <img src="img/child-bike-mobile@1x.jpg 1x, img/child-bike-mobile@2x.jpg 2x" alt="Детский велосипед">
+              </picture>
+              <p>Детский велосипед</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="video" id="video">
         <h2>Видео про велосипеды</h2>
