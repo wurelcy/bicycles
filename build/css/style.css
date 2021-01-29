@@ -394,7 +394,8 @@ a {
 .page-header__wrapper .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 240px; }
+  margin-bottom: 240px;
+  max-width: 880px; }
 
 @media (max-width: 1023px) {
   .page-header {
@@ -415,7 +416,8 @@ a {
   .page-header__wrapper--nojs .page-header__toggle {
     display: none; }
   .page-header__logo {
-    margin-left: 21px; }
+    margin-top: 19px;
+    margin-left: 22px; }
   .page-header__toggle {
     margin: 0;
     margin-left: auto;
@@ -443,6 +445,9 @@ a {
 @media (max-width: 767px) {
   .page-header__block {
     background-image: url("../img/bg-bike-mobile@1x.jpg"); }
+  .page-header__logo {
+    margin-top: 20px;
+    margin-left: 18px; }
   .page-header__wrapper .container {
     margin-bottom: 0; } }
 
@@ -537,7 +542,8 @@ iframe {
     margin-bottom: 22px; } }
 
 .form {
-  max-width: 327px; }
+  max-width: 327px;
+  margin-top: 5px; }
 
 .form__title {
   font-weight: 600;
@@ -589,13 +595,21 @@ iframe {
   .form {
     max-width: 321px;
     margin-top: 70px; }
+  .form__name-field,
+  .form__number-field {
+    padding-left: 20px; }
   .form__title {
     color: #000000;
-    margin-bottom: 30px; } }
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: -0.1px; } }
 
 @media (max-width: 767px) {
   .form {
     max-width: 288px; }
+  .form__name-field,
+  .form__number-field {
+    padding-left: 25px; }
   .form__title {
     margin-bottom: 20px; } }
 
@@ -626,11 +640,13 @@ iframe {
   .intro__slogan {
     font-size: 30px;
     line-height: 42px;
-    margin-top: 88px;
+    margin-top: 84px;
     margin-bottom: 20px; }
   .intro__description {
     font-size: 18px;
-    margin-bottom: 80px; } }
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 435px; } }
 
 @media (max-width: 767px) {
   .intro__slogan {
@@ -641,8 +657,9 @@ iframe {
     max-width: 288px; } }
 
 .main-nav {
-  margin: 0;
-  margin-bottom: 260px; }
+  margin: 0 auto;
+  margin-bottom: 255px;
+  max-width: 880px; }
 
 .main-nav__list {
   margin: 0;
@@ -660,7 +677,8 @@ iframe {
 
 @media (max-width: 1023px) {
   .main-nav {
-    margin: 0; }
+    margin: 0;
+    max-width: 100%; }
   .main-nav__list {
     margin: 0;
     padding: 0;
@@ -794,7 +812,8 @@ iframe {
   line-height: 30px; }
 
 .video__preview {
-  position: relative; }
+  position: relative;
+  max-height: 522px; }
   .video__preview::after {
     position: absolute;
     content: "";
@@ -814,11 +833,13 @@ iframe {
       margin-bottom: 40px; }
   .video__title {
     font-size: 24px; }
-  .video__preview::after {
-    width: 90px;
-    height: 90px;
-    top: 110px;
-    left: -45px; } }
+  .video__preview {
+    max-height: 282px; }
+    .video__preview::after {
+      width: 90px;
+      height: 90px;
+      top: 110px;
+      left: -45px; } }
 
 @media (max-width: 767px) {
   .video {
@@ -826,11 +847,13 @@ iframe {
     background: linear-gradient(#131314 85%, #ffffff 85%); }
     .video p {
       margin-bottom: 50px; }
-  .video__preview::after {
-    width: 65px;
-    height: 65px;
-    top: 50px;
-    left: -30px; } }
+  .video__preview {
+    max-height: 161px; }
+    .video__preview::after {
+      width: 65px;
+      height: 65px;
+      top: 50px;
+      left: -30px; } }
 
 .types {
   background-color: #f6f7f9;

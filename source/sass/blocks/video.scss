@@ -31,6 +31,7 @@
 
 .video__preview {
   position: relative;
+  max-height: 522px;
 
   &::after {
     position: absolute;
@@ -60,6 +61,8 @@
   }
 
   .video__preview {
+    max-height: 282px;
+
     &::after {
       width: 90px;
       height: 90px;
@@ -80,6 +83,8 @@
   }
 
   .video__preview {
+    max-height: 161px;
+
     &::after {
       width: 65px;
       height: 65px;

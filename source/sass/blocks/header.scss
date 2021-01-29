@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 240px;
+    max-width: 880px;
   }
 }
 
@@ -51,7 +52,8 @@
   }
 
   .page-header__logo {
-    margin-left: 21px;
+    margin-top: 19px;
+    margin-left: 22px;
   }
 
   .page-header__toggle {
@@ -94,6 +96,12 @@
   .page-header__block {
     background-image: url("../img/bg-bike-mobile@1x.jpg");
   }
+
+  .page-header__logo {
+    margin-top: 20px;
+    margin-left: 18px;
+  }
+
 
   .page-header__wrapper {
     .container {

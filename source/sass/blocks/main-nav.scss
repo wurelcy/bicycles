@@ -1,6 +1,7 @@
 .main-nav {
-  margin: 0;
-  margin-bottom: 260px;
+  margin: 0 auto;
+  margin-bottom: 255px;
+  max-width: 880px;
 }
 
 .main-nav__list {
@@ -21,6 +22,7 @@
 @media (max-width: $tablet-width) {
   .main-nav {
     margin: 0;
+    max-width: 100%;
   }
 
   .main-nav__list {
