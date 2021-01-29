@@ -698,8 +698,9 @@ iframe {
 
 @media (max-width: 1023px) {
   .main-nav {
-    margin: 0;
-    max-width: 100%; }
+    margin: 0; }
+    .main-nav .container {
+      min-width: 100%; }
   .main-nav__list {
     margin: 0;
     padding: 0;
