@@ -751,17 +751,19 @@ iframe {
     font-size: 28px;
     line-height: 38px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     padding: 0; }
   .facts__item p:last-child {
     font-size: 22px;
     line-height: 34px;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    letter-spacing: -0.5px; }
 
 @media (max-width: 1023px) {
   .facts {
-    margin: 70px 0; }
+    margin: 0;
+    margin-bottom: 30px; }
   .facts__title {
     margin-bottom: 30px;
     font-size: 24px;
@@ -777,12 +779,20 @@ iframe {
       margin-right: 30px; } }
 
 @media (max-width: 767px) {
+  .facts {
+    margin: 70px 0;
+    margin-bottom: 30px; }
   .facts__item {
-    max-width: 100%; }
+    margin-bottom: 36px; }
+    .facts__item:first-child p:first-child {
+      margin-bottom: 17px; }
+    .facts__item:first-child p:last-child {
+      padding-bottom: 2px; }
     .facts__item p:first-child {
-      margin-bottom: 18px; }
+      margin-bottom: 6px; }
     .facts__item p:last-child {
-      font-size: 18px; }
+      font-size: 18px;
+      padding-bottom: 13px; }
     .facts__item:nth-child(odd) {
       margin-right: 0; } }
 

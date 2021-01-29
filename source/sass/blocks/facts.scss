@@ -31,7 +31,7 @@
     font-size: 28px;
     line-height: 38px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     padding: 0;
   }
 
@@ -40,12 +40,14 @@
     line-height: 34px;
     margin: 0;
     padding: 0;
+    letter-spacing: -0.5px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .facts {
-    margin: 70px 0;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .facts__title {
@@ -73,15 +75,31 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .facts {
+    margin: 70px 0;
+    margin-bottom: 30px;
+  }
+
   .facts__item {
-    max-width: 100%;
+    margin-bottom: 36px;
+
+    &:first-child {
+      p:first-child {
+        margin-bottom: 17px;
+      }
+
+      p:last-child {
+        padding-bottom: 2px;
+      }
+    }
 
     p:first-child {
-      margin-bottom: 18px;
+      margin-bottom: 6px;
     }
 
     p:last-child {
       font-size: 18px;
+      padding-bottom: 13px;
     }
 
     &:nth-child(odd) {
