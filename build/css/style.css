@@ -798,7 +798,7 @@ iframe {
 
 .video {
   padding-top: 120px;
-  background: linear-gradient(#131314 85%, #ffffff 85%);
+  background: linear-gradient(#131314 88%, #ffffff 88%);
   color: #ffffff;
   text-align: center; }
   .video p {
@@ -815,6 +815,7 @@ iframe {
 
 .video__title {
   margin: 0;
+  margin-right: 10px;
   margin-bottom: 20px;
   padding: 0;
   font-weight: 600;
@@ -832,38 +833,41 @@ iframe {
     background-image: url("../img/icon-play.svg");
     background-size: contain;
     top: 229px;
-    left: -30px; }
+    left: -31px; }
 
 @media (max-width: 1023px) {
   .video {
     padding-top: 70px;
-    background: linear-gradient(#131314 85%, #ffffff 85%); }
+    background: linear-gradient(#131314 83%, #ffffff 83%); }
     .video p {
       max-width: 429px;
       margin-bottom: 40px; }
   .video__title {
+    margin-right: 0;
     font-size: 24px; }
   .video__preview {
     max-height: 282px; }
     .video__preview::after {
       width: 90px;
       height: 90px;
-      top: 110px;
+      top: 95px;
       left: -45px; } }
 
 @media (max-width: 767px) {
   .video {
     padding-top: 84px;
-    background: linear-gradient(#131314 85%, #ffffff 85%); }
+    background: linear-gradient(#131314 89%, #ffffff 89%); }
     .video p {
-      margin-bottom: 50px; }
+      margin-bottom: 53px; }
+  .video__title {
+    margin-right: 12px; }
   .video__preview {
     max-height: 161px; }
     .video__preview::after {
       width: 65px;
       height: 65px;
-      top: 50px;
-      left: -30px; } }
+      top: 49px;
+      left: -33px; } }
 
 .types {
   background-color: #f6f7f9;
