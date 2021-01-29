@@ -588,7 +588,7 @@ iframe {
   height: 48px;
   border-radius: 4px;
   border: 1px solid #c9ccd4;
-  padding: 14px;
+  padding: 12px;
   padding-left: 30px; }
   .form__name-field::-moz-placeholder, .form__number-field::-moz-placeholder {
     font-size: 15px;
@@ -767,13 +767,15 @@ iframe {
 
 .facts__item {
   max-width: 263px; }
+  .facts__item:first-child p:first-child {
+    margin-bottom: 17px; }
   .facts__item p:first-child {
     color: #0ad9c6;
     font-weight: bold;
     font-size: 28px;
     line-height: 38px;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding: 0; }
   .facts__item p:last-child {
     font-size: 22px;
