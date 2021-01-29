@@ -781,7 +781,7 @@ iframe {
 @media (max-width: 767px) {
   .facts {
     margin: 70px 0;
-    margin-bottom: 30px; }
+    margin-bottom: 32px; }
   .facts__item {
     margin-bottom: 36px; }
     .facts__item:first-child p:first-child {
@@ -867,8 +867,10 @@ iframe {
 
 .types {
   background-color: #f6f7f9;
-  padding-top: 149px;
-  padding-bottom: 147px; }
+  padding-top: 151px;
+  padding-bottom: 150px; }
+  .types .container {
+    max-width: 1128px; }
 
 .types__title {
   font-weight: 600;
@@ -902,10 +904,11 @@ iframe {
     .types__item:nth-child(2)::after {
       top: auto;
       left: auto;
-      bottom: 35px;
-      right: -20px; }
+      bottom: 30px;
+      right: -25px; }
   .types__item:first-child {
-    z-index: 1; }
+    z-index: 1;
+    margin-top: 10px; }
     .types__item:first-child::before {
       position: absolute;
       content: "";
@@ -914,7 +917,7 @@ iframe {
       background-image: url("../img/icon-ellipse.svg");
       background-size: contain;
       top: 156px;
-      left: -65px;
+      left: -60px;
       z-index: -1; }
   .types__item:last-child::before {
     position: absolute;
@@ -932,11 +935,12 @@ iframe {
     line-height: 34px;
     margin: 0;
     margin-top: 20px;
-    padding: 0; }
+    padding: 0;
+    letter-spacing: -0.5px; }
 
 @media (max-width: 1023px) {
   .types {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 20px; }
   .types__title {
     font-size: 24px;
@@ -952,11 +956,12 @@ iframe {
       .types__item:nth-child(2)::before, .types__item:nth-child(2)::after {
         display: none; }
     .types__item:first-child {
-      margin-right: 50px; }
+      margin-right: 50px;
+      margin-top: 0; }
       .types__item:first-child::before {
         height: 127px;
         width: 127px;
-        top: 200px;
+        top: 201px;
         left: -37px; }
     .types__item:last-child::before {
       height: 68px;
@@ -966,12 +971,13 @@ iframe {
 
 @media (max-width: 767px) {
   .types {
-    padding-bottom: 0; }
+    padding-top: 50px;
+    padding-bottom: 12px; }
   .types__list {
     flex-wrap: wrap;
     justify-content: center; }
   .types__item {
-    margin-bottom: 50px; }
+    margin-bottom: 42px; }
     .types__item:first-child {
       margin-right: 0; }
       .types__item:first-child::before {

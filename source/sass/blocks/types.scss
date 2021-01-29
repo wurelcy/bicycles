@@ -1,7 +1,11 @@
 .types {
   background-color: $light;
-  padding-top: 149px;
-  padding-bottom: 147px;
+  padding-top: 151px;
+  padding-bottom: 150px;
+
+  .container {
+    max-width: 1128px;
+  }
 }
 
 .types__title {
@@ -45,13 +49,14 @@
     &::after {
       top: auto;
       left: auto;
-      bottom: 35px;
-      right: -20px;
+      bottom: 30px;
+      right: -25px;
     }
   }
 
   &:first-child {
     z-index: 1;
+    margin-top: 10px;
 
     &::before {
       position: absolute;
@@ -61,7 +66,7 @@
       background-image: url("../img/icon-ellipse.svg");
       background-size: contain;
       top: 156px;
-      left: -65px;
+      left: -60px;
       z-index: -1;
     }
   }
@@ -87,12 +92,13 @@
     margin: 0;
     margin-top: 20px;
     padding: 0;
+    letter-spacing: -0.5px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .types {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 20px;
   }
 
@@ -121,11 +127,12 @@
 
     &:first-child {
       margin-right: 50px;
+      margin-top: 0;
 
       &::before {
         height: 127px;
         width: 127px;
-        top: 200px;
+        top: 201px;
         left: -37px;
       }
     }
@@ -143,7 +150,8 @@
 
 @media (max-width: $mobile-width-only) {
   .types {
-    padding-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 12px;
   }
 
   .types__list {
@@ -152,7 +160,7 @@
   }
 
   .types__item {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
 
     &:first-child {
       margin-right: 0;
