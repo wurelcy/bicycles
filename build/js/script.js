@@ -5,6 +5,8 @@ const factsLink = document.querySelector('#facts-link');
 const typesLink = document.querySelector('#types-link');
 const videoLink = document.querySelector('#video-link');
 const contactsLink = document.querySelector('#contacts-link');
+const phone = document.querySelector('#your-number');
+const submit = document.querySelector('#submit-btn');
 
 navMain.classList.remove('main-nav--nojs');
 header.classList.remove('page-header--nojs');
@@ -43,4 +45,12 @@ videoLink.addEventListener('click', function() {
 
 contactsLink.addEventListener('click', function() {
   closeMenu();
+});
+
+submit.addEventListener('click', function (evt) {
+  const phoneReg = /((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+  if (phoneReg.test(phone.value) === false || !phone.value) {
+    evt.preventDefault();
+    alert('Введите корректный телефон');
+  }
 });

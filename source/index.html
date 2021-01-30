@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Велосипеды</title>
     <link rel="stylesheet" href="/css/styles.min.css">
+    <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
+    <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans-light.woff2" as="font">
   </head>
   <body class="page-body">
     <header class="page-header page-header--closed page-header--nojs">
@@ -49,17 +53,17 @@
               <p class="intro__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
             </section>
           </div>
-          <form class="form" action="index.html" method="post">
+          <form class="form" action="" method="post">
             <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <p class="form__name">
               <label for="your-name" class="visually-hidden">Имя</label>
-              <input class="form__name-field" id="your-name" type="text" name="name" placeholder="Введите Ваше Имя">
+              <input id="your-name" type="text" name="name" placeholder="Введите Ваше Имя" required>
             </p>
             <p class="form__number">
               <label for="your-number" class="visually-hidden">Номер телефона</label>
-              <input class="form__number-field" id="your-number" type="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
+              <input id="your-number" type="tel" name="tel" placeholder="Введите Ваш номер телефона">
             </p>
-            <button type="submit" class="form__submit" aria-label="Отправить заявку">Подобрать велосипед мечты</button>
+            <button type="submit" aria-label="Отправить заявку" id="submit-btn">Подобрать велосипед мечты</button>
           </form>
         </div>
       </div>
@@ -99,7 +103,7 @@
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
                 <source type="image/webp" srcset="img/road-bike-mobile@1x.webp 1x, img/road-bike-mobile@2x.webp 2x">
                 <source srcset="img/road-bike-desktop@1x.jpg 1x, img/road-bike-desktop@2x.jpg 2x" media="(min-width: 1024px)">
-                <img src="img/road-bike-mobile@1x.jpg 1x, img/road-bike-mobile@2x.jpg 2x" alt="Дорожный велосипед">
+                <img src="img/road-bike-mobile@1x.jpg" srcset="img/road-bike-mobile@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
               </picture>
               <p>Дорожный велосипед</p>
             </li>
@@ -108,7 +112,7 @@
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/mount-bike-desktop@1x.webp 1x, img/mount-bike-desktop@2x.webp 2x">
                 <source type="image/webp" srcset="img/mount-bike-mobile@1x.webp 1x, img/mount-bike-mobile@2x.webp 2x">
                 <source srcset="img/mount-bike-desktop@1x.jpg" media="(min-width: 1024px)">
-                <img src="img/mount-bike-mobile@1x.jpg 1x, img/mount-bike-mobile@2x.jpg 2x" alt="Горный велосипед">
+                <img src="img/mount-bike-mobile@1x.jpg" srcset="img/mount-bike-mobile@2x.jpg 2x" alt="Горный велосипед" width="270" height="300">
               </picture>
               <p>Горный велосипед</p>
             </li>
@@ -117,7 +121,7 @@
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/child-bike-desktop@1x.webp 1x, img/child-bike-desktop@2x.webp 2x">
                 <source type="image/webp" srcset="img/child-bike-mobile@1x.webp 1x, img/child-bike-mobile@2x.webp 2x">
                 <source srcset="img/child-bike-desktop@1x.jpg" media="(min-width: 1024px)">
-                <img src="img/child-bike-mobile@1x.jpg 1x, img/child-bike-mobile@2x.jpg 2x" alt="Детский велосипед">
+                <img src="img/child-bike-mobile@1x.jpg" srcset="img/child-bike-mobile@2x.jpg 2x" alt="Детский велосипед" width="270" height="300">
               </picture>
               <p>Детский велосипед</p>
             </li>
@@ -129,14 +133,17 @@
           <h2 class="video__title">Видео про велосипеды</h2>
           <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
           <picture class="video__preview">
-            <source srcset="img/video-preview-desktop@1x.jpg" media="(min-width: 1024px)">
-            <source srcset="img/video-preview-tablet@1x.jpg" media="(min-width: 768px)">
-            <img src="img/video-preview-mobile@1x.jpg" alt="Превью видео">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x">
+            <source srcset="img/video-preview-desktop@1x.jpg 1x, img/video-preview-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+            <source srcset="img/video-preview-tablet@1x.jpg 1x, img/video-preview-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/video-preview-mobile@1x.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" alt="Превью видео">
           </picture>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer>
       <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
