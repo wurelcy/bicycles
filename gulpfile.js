@@ -35,12 +35,13 @@ exports.styles = styles;
 // Images
 
 const images = () => {
-  return gulp.src("build/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;
@@ -48,19 +49,29 @@ exports.images = images;
 // Webps
 
 const webps = () => {
-  return gulp.src("build/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
 
 exports.webps = webps;
 
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.sprite = sprite;
+
 // Copy
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**/*.{png,jpg,svg}"
   ], {
     base: "source"
   })
@@ -109,6 +120,7 @@ const build = gulp.series(
   styles,
   images,
   webps,
+  sprite,
   js,
   html
 );

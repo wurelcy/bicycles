@@ -1,35 +1,38 @@
 .contacts {
   margin-top: 151px;
-}
 
-.contacts__title {
-  margin: 0;
-  margin-right: 10px;
-  margin-bottom: 30px;
-  padding: 0;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  text-align: center;
-  color: $darkest;
-}
+  .container {
+    p:first-child {
+      margin: 0;
+      margin-right: 10px;
+      margin-bottom: 30px;
+      padding: 0;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: $darkest;
+    }
 
-.contacts__address {
-  margin: 0;
-  margin-right: 13px;
-  margin-bottom: 41px;
-  padding: 0;
-  font-size: 17px;
-  line-height: 31px;
-  text-align: center;
-  color: rgba($black, 0.7);
-}
+    p:nth-child(2n) {
+      margin: 0 auto;
+      padding: 0;
+      padding-right: 13px;
+      margin-bottom: 41px;
+      font-size: 17px;
+      line-height: 31px;
+      text-align: center;
+      color: rgba($black, 0.7);
+      max-width: 555px;
+    }
+  }
 
-iframe {
-  border: 0;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 38px;
+  iframe {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
 }
 
 .contacts__wrapper {
@@ -72,27 +75,25 @@ iframe {
 @media (max-width: $tablet-width) {
   .contacts {
     margin-top: 70px;
-  }
 
-  .contacts__title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    margin-right: 0;
-  }
+    .container {
+      p:first-child {
+        margin-bottom: 20px;
+        font-size: 24px;
+        margin-right: 0;
+      }
 
-  .contacts__address {
-    margin-bottom: 20px;
-    margin-right: 0;
-    max-width: 100%;
-
-    br {
-      display: none;
+      p:nth-child(2n) {
+        margin-bottom: 20px;
+        padding-right: 0;
+        max-width: 100%;
+      }
     }
-  }
 
-  iframe {
-    max-width: 698px;
-    margin-bottom: 36px;
+    iframe {
+      max-width: 698px;
+      margin-bottom: 36px;
+    }
   }
 
   .contacts__wrapper {
@@ -111,28 +112,24 @@ iframe {
 
 @media (max-width: $mobile-width-only) {
   .contacts {
+    iframe {
+      max-width: 100%;
+      max-height: 250px;
+      margin-bottom: 30px;
+    }
+
     .container {
       min-width: 100%;
-    }
-  }
 
-  .contacts__title {
-    font-size: 18px;
-  }
+      p:first-child {
+        font-size: 18px;
+      }
 
-  iframe {
-    max-width: 100%;
-    max-height: 250px;
-    margin-bottom: 30px;
-  }
-
-  .contacts__address {
-    margin: 0 auto;
-    margin-bottom: 21px;
-    max-width: 270px;
-
-    br {
-      display: none;
+      p:nth-child(2n) {
+        margin: 0 auto;
+        margin-bottom: 21px;
+        max-width: 270px;
+      }
     }
   }
 

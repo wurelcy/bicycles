@@ -1,7 +1,8 @@
 .types {
   background-color: $light;
   padding-top: 151px;
-  padding-bottom: 150px;
+  padding-bottom: 148px;
+  overflow-x: hidden;
 
   .container {
     max-width: 1128px;
@@ -23,6 +24,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -33,7 +35,7 @@
     border-radius: 10px;
   }
 
-  &:nth-child(2) {
+  &:nth-child(3n-1) {
     margin-top: 39px;
 
     &::before,
@@ -110,14 +112,19 @@
   }
 
   .types__list {
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   .types__item {
     margin-bottom: 50px;
 
-    &:nth-child(2) {
+    img {
+      max-height: 300px;
+      max-width: 270px;
+      object-fit: cover;
+    }
+
+    &:nth-child(3n-1) {
       margin-top: 0;
 
       &::before,
@@ -126,8 +133,11 @@
       }
     }
 
-    &:first-child {
+    &:nth-child(odd) {
       margin-right: 50px;
+    }
+
+    &:first-child {
       margin-top: 0;
 
       &::before {
@@ -139,6 +149,8 @@
     }
 
     &:last-child {
+      margin-right: 0;
+
       &::before {
         height: 68px;
         width: 68px;

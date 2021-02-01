@@ -4,6 +4,10 @@
   color: $white;
   text-align: center;
 
+  .container {
+    position: relative;
+  }
+
   p {
     font-weight: 300;
     font-size: 16px;
@@ -34,17 +38,16 @@
 .video__preview {
   position: relative;
   max-height: 522px;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 65px;
-    height: 65px;
-    background-image: url("../img/icon-play.svg");
-    background-size: contain;
-    top: 229px;
-    left: -31px;
-  }
+.video__button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
 }
 
 @media (max-width: $tablet-width) {
@@ -64,13 +67,19 @@
   }
 
   .video__preview {
-    max-height: 282px;
+    img {
+      height: 282px;
+      width: 503px;
+      object-fit: cover;
+    }
+  }
 
-    &::after {
+  .video__button {
+    transform: translate(-50%, 30%);
+
+    svg {
       width: 90px;
       height: 90px;
-      top: 95px;
-      left: -45px;
     }
   }
 }
@@ -90,13 +99,19 @@
   }
 
   .video__preview {
-    max-height: 161px;
+    img {
+      height: 161px;
+      width: 288px;
+      object-fit: cover;
+    }
+  }
 
-    &::after {
+  .video__button {
+    transform: translate(-50%, 85%);
+
+    svg {
       width: 65px;
       height: 65px;
-      top: 49px;
-      left: -33px;
     }
   }
 }
