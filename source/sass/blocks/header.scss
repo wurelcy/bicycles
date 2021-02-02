@@ -36,7 +36,7 @@
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
 
   input {
@@ -56,6 +56,12 @@
     &:hover,
     &:focus {
       border-color: $cyan;
+      outline: none;
+      background-color: $light;
+    }
+
+    &:active {
+      background-color: $lightgrey;
     }
   }
 
@@ -151,6 +157,7 @@
   .page-header__logo {
     margin-top: 19px;
     margin-left: 22px;
+    height: 20px;
   }
 
   .page-header__toggle {
