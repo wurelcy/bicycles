@@ -62,21 +62,24 @@
   }
 }
 
-@media (max-width: $desktop-width + 142px) {
+@media (max-width: $desktop-width + 143px) {
+  .facts__list {
+    margin: 0 auto;
+    max-width: 905px;
+  }
+
   .facts__item {
     &:nth-child(3n-2) {
+      margin-left: 19px;
+    }
+
+    &:nth-child(4n-3) {
       margin-left: 19px;
     }
 
     &:nth-child(4n) {
       margin-right: 19px;
       margin-left: 19px;
-    }
-
-    &:first-child {
-      p:first-child {
-        margin-bottom: 17px;
-      }
     }
   }
 }
