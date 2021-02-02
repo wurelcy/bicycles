@@ -87,7 +87,7 @@
 @media (max-width: $tablet-width) {
   .facts {
     padding: 0;
-    padding-bottom: 48px;
+    padding-bottom: 27px;
 
     p {
       margin-bottom: 30px;
@@ -102,7 +102,7 @@
 
   .facts__item {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 42px;
 
     &:nth-child(4n-3),
     &:nth-child(3n-2) {
@@ -141,7 +141,7 @@
     margin-bottom: 37px;
 
     &:first-child {
-      margin-bottom: 10px;
+      margin-bottom: 28px;
 
       p {
         &::before {

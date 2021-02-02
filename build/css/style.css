@@ -831,7 +831,7 @@ a {
 @media (max-width: 1023px) {
   .facts {
     padding: 0;
-    padding-bottom: 48px; }
+    padding-bottom: 27px; }
     .facts p {
       margin-bottom: 30px;
       font-size: 24px;
@@ -840,7 +840,7 @@ a {
     justify-content: center; }
   .facts__item {
     margin: 0;
-    margin-bottom: 22px; }
+    margin-bottom: 42px; }
     .facts__item:nth-child(4n-3), .facts__item:nth-child(3n-2) {
       margin-left: 0; }
     .facts__item:nth-child(4n) {
@@ -863,7 +863,7 @@ a {
   .facts__item {
     margin-bottom: 37px; }
     .facts__item:first-child {
-      margin-bottom: 10px; }
+      margin-bottom: 28px; }
       .facts__item:first-child p::before {
         top: -55px; }
     .facts__item:last-child {
