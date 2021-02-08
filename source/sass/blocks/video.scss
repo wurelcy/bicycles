@@ -43,11 +43,14 @@
 .video__button {
   border: 0;
   background: 0;
-  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 70%);
+
+  &:hover svg {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $tablet-width) {

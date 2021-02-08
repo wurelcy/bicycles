@@ -6,8 +6,9 @@
 
 .main-nav__list {
   margin: 0;
+  padding: 0;
   margin-top: 21px;
-  padding: 0 25px;
+  //padding: 0 21px;
   padding-bottom: 9px;
   list-style: none;
   color: rgba($white, 0.7);
@@ -15,11 +16,19 @@
   font-size: 16px;
   line-height: 32px;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba($white, 0.2);
 }
 
 .main-nav__item {
+  margin-left: 21px;
+  margin-right: 115px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
   &:focus,
   &:hover {
     color: $white;
@@ -88,12 +97,13 @@
 
   .main-nav--opened {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background-color: white;
     min-width: 100%;
     min-height: 100%;
-    z-index: 1;
+    z-index: 3;
+    overflow: scroll;
   }
 }

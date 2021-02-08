@@ -99,8 +99,26 @@
 }
 
 @media (max-width: $desktop-width + 200px) {
+  .types {
+    .container {
+      max-width: 1000px;
+    }
+  }
+
+  .types__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .types__item {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+
     &:nth-child(3n-1) {
+      margin-top: 0;
+
       &::after {
         right: 0;
       }
@@ -112,6 +130,10 @@
       }
     }
   }
+}
+
+@media (max-width: $desktop-width) {
+
 }
 
 @media (max-width: $tablet-width) {
