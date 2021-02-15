@@ -654,17 +654,20 @@ a {
       margin-bottom: 21px;
       max-width: 270px; }
   .contacts__wrapper {
+    display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
-    margin-left: 35px; }
+    align-items: center;
+    padding: 0;
+    margin-left: 37px;
+    margin-bottom: 50px; }
   .contacts__phone {
     margin-left: 0;
-    margin-right: 10px; }
+    margin-right: 13px; }
   .contacts__email {
     margin-right: 0;
     margin-left: 12px;
-    margin-bottom: 23px; } }
+    margin-bottom: 24px; } }
 
 .intro {
   color: #ffffff;
