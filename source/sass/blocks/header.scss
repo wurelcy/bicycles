@@ -37,13 +37,8 @@
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     appearance: none;
+    -moz-appearance: none;
   }
-
-  input::-moz-outer-spin-button,
-  input::-moz-inner-spin-button {
-    appearance: none;
-  }
-
 
   input {
     min-width: 100%;
