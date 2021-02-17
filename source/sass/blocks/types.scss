@@ -132,10 +132,6 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-}
-
 @media (max-width: $tablet-width) {
   .types {
     padding-top: 50px;
@@ -150,6 +146,8 @@
 
   .types__list {
     justify-content: center;
+    margin: auto;
+    max-width: 800px;
   }
 
   .types__item {
@@ -202,7 +200,8 @@
 
   .types__list {
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .types__item {
